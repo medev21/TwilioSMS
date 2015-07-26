@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .message-container
+    h1 A message has been sent!
+    br
+    form(method="GET", action="/")
+      input(type="submit", value ="Try Again!")

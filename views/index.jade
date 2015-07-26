@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .index-container
+  
+    h1 A #{title} SMS Message
+
+    p Please enter a message and your phone number starting with the area code
+  
+    form(method="POST", action="/users")
+      input(type="text", name="message", placeholder="say Hi!")
+      input(type="text", name="phonenumber", placeholder="e.g 6158675309")
+      br
+      br
+      input(type="submit", value="Submit")

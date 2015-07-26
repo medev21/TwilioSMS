@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .oops-container
+    h1 Oops, it looks like the number #{phonenumber} was incorrect.  Things you can do to correct the problem:
+    ul
+      li Make sure you have digits only on the phone number field
+      li Include the area code, it should be ten digits only.
+      li Make sure the number is verified by Twilio
+      li Did you even try to a enter a number?
+    form(method="GET", action="/")
+      input(type="submit", value="Try Again")
